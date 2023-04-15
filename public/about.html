@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="./css//about.css">
+</head>
+<body>
+    <!-- Main container -->
+
+    <div class="maindiv-container">
+        <!-- navbar -->
+    <div class="navbar">
+        <div class="logo">SEOTEK</div>
+
+        <!-- hamburger menu -->
+        <div class="mobile-menu">
+            <ion-icon name="menu" id="menu" onclick="open_menu()"></ion-icon>
+            <ion-icon name="close" id="close" onclick="close_menu()"></ion-icon>
+        </div>
+        <!-- hamburger menu ends -->
+
+        <ul class="navitems">
+            <li><a href="./index.html" class="navlink">Home</a></li>
+            <li><a href="./about.html" class="navlink" id="active-link">About</a></li>
+            <li><a href="./services.html" class="navlink">Services</a></li>
+            <li><a href="#contact-link" class="navlink">Contact Us</a></li>
+            <li><a href="./about.html" class="navlink" id="callicon">
+                <ion-icon name="call"></ion-icon>
+                <div class="callus">Call : +011 24326553</div>
+            </a></li>
+            <li><a href="./about.html" class="navlink" id="searchicon">
+                <ion-icon name="search-outline"></ion-icon>
+            </a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile menu -->
+
+    <div class="menuitems">
+        <ul class="menulist">
+            <li><a href="./index.html" class="menulink">Home</a></li>
+            <li><a href="./about.html" class="menulink" id="active-link">About</a></li>
+            <li><a href="./services.html" class="menulink">Services</a></li>
+            <li><a href="#contact-link" class="menulink">Contact Us</a></li>
+            <li><a href="./about.html" class="menulink" id="search-icon">
+                <ion-icon name="search-outline"></ion-icon>
+            </a></li>
+        </ul>
+    </div>
+    <!-- Mobile menu ends -->
+
+    <!-- About us section -->
+
+    <div class="about-us">
+        <div class="about-child1">
+            <div class="about-imgbox">
+                <img src="./images/about.png" class="about-img" alt="">
+                <img src="./images/about-img.png" class="about_img" alt="">
+            </div>
+        </div>
+        <div class="about-child2">
+            <div class="about-child2-head">About Us
+                <ion-icon name="ellipse" id="about-dot"></ion-icon>
+            </div>
+            <div class="about-content">
+                <p class="about-para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                </p>
+                <form action="./about.html" method="post">
+                    <button class="about-btn">Read More</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About us section ends -->
+
+    <!-- Get in touch section -->
+    <a id="contact-link"></a>
+    <div class="get_in_touch">
+        <div class="get_in_touch_child">
+            Get In Touch
+            <ion-icon name="ellipse" id="get_in_touch-dot"></ion-icon>
+        </div>
+        <div class="git-form-div">
+            <form class="git-form" id="git_form" method="post"  autocomplete="off">
+                <input type="text"  id="name" class="textbox" placeholder="Name">
+                <input type="text"  id="email" class="textbox" placeholder="Email">
+                <input type="text"  id="subject" class="textbox" placeholder="Subject">
+                <input type="text"  id="message" class="textbox" placeholder="Message">
+                <div class="git-btn-container">
+                    <button type="button" id="send-btn" class="git-btn" onclick="send()">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-box1">
+                    <div class="footer-box1-heading">
+                        SEOTEK
+                    </div>
+                    <div class="footer-box1-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor indidunt ut labore et dolore magna
+                    </div>
+                </div>
+                <div class="footer-box2">
+                    <div class="footer-box2-heading">
+                        BASIC LINKS
+                    </div>
+                    <div class="footer-box2-content">
+                        <ul>
+                            <li><a href="./index.html" class="footer-links">Home</a></li>
+                            <li><a href="./about.html" class="footer-links" id="active">
+                                <ion-icon name="ellipse" id="footer-dot"></ion-icon>
+                                About
+                            </a></li>
+                            <li><a href="./services.html" class="footer-links">Services</a></li>
+                            <li><a href="#contact-link" class="footer-links">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-box3">
+                    <div class="footer-box3-heading">
+                        CONTACT DETAILS
+                    </div>
+                    <div class="footer-box3-content">
+                        <div class="footer-child1">
+                            <ion-icon name="call" id="phone-icon"></ion-icon>
+                            +01 1234567890
+                        </div>
+                        <div class="footer-child2">
+                            <ion-icon name="mail" id="mail-icon"></ion-icon>
+                            demo@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-box4">
+                    <div class="footer-box4-heading">
+                        NEWSLETTER
+                    </div>
+                    <div class="footer-box4-content">
+                        <form class="box-4-content" id="footer-form" method="post" autocomplete="off">
+                            <input type="text" id="footer-mail" class="box4-mail" placeholder="Enter your email">
+                            <button type="button" class="box-4-btn" id="subscribe" onclick="subscribe_nl()">SUBSCRIBE</button>
+                        </form>
+                        <div class="footer-icons">
+                            <div class="footer-icon1">
+                                <ion-icon name="logo-facebook" class="footer-social-icons"></ion-icon>    
+                            </div>
+                            <div class="footer-icon2">
+                                <ion-icon name="logo-twitter" class="footer-social-icons"></ion-icon>
+                            </div>
+                            <div class="footer-icon3">
+                                <ion-icon name="logo-linkedin" class="footer-social-icons"></ion-icon>
+                            </div>
+                            <div class="footer-icon4">
+                                <ion-icon name="logo-youtube" class="footer-social-icons"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 All Rights Reserved By Pragya Jain
+            </div>
+        </div>
+    </div>
+    <!-- Get in touch section ends -->
+
+    </div>
+
+    <!-- Main container ends -->
+
+
+    <div class="not-supported">
+        <div class="not-supported-subdiv">
+            This device is not supported
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>  
+    <script src="./js/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
